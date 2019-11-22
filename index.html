@@ -54,7 +54,7 @@
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="imgs/robot.svg" alt="">
+      <img class="masthead-avatar mb-5" src="imgs/robot.png" alt="">
 
       <!-- Masthead Heading -->
       <h1 class="masthead-heading text-uppercase mb-0">Hands Dryers</h1>
@@ -69,7 +69,7 @@
       </div>
 
       <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+      <p class="masthead-subheading font-weight-light mb-0">Which do you prefer?</p>
 
     </div>
   </header>
@@ -413,12 +413,22 @@
                 </div>
                 <!-- HD Modal - Text -->
                 <p class="mb-5">Location: Edinburgh</p>
-                <p class="mb-5">Ranking: xx</p>
-                <p class="mb-5">Vote: 1-2-3-4-5</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Close Window
-                </button>
+                <p class="mb-5">Ranking: xx</p> <!-- show ranking of the HD -->
+                <p class="mb-5">Vote:</p>
+                <form class="form-inline" action="/handdryerswebsite/php/vote_page.php" method="post">
+                  <div class="radio">
+                    <label class="radio-inline"><input type="radio" name="optradio" value="1" checked>1</label>
+                    <label class="radio-inline"><input type="radio" name="optradio" value="2">2 </label>
+                    <label class="radio-inline"><input type="radio" name="optradio" value="3">3 </label>
+                  </div>
+                  <button type="submit" class="btn btn-social">Vote</button>
+                </form>
+                <div>
+                    <button class="btn btn-primary" href="#" data-dismiss="modal">
+                        <p><i class="fas fa-times fa-fw"></i></p>
+                          Close Window
+                    </button>
+                </div>
               </div>
             </div>
           </div>
